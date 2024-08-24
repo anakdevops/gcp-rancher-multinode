@@ -3,6 +3,9 @@ Recommended Service Account roles:
 Compute Admin
 Network Management Admin
 ```
+![image](serviceaccount.png)
+
+
 
 ```
 ./init_terraform.sh
