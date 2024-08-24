@@ -6,25 +6,24 @@ instance_internal_ips = [
   "10.0.0.2",
 ]
 instance_ips = [
-  "34.45.189.254",
   "34.68.131.157",
+  "35.202.95.97",
 ]
 ```
 
 # Single Node | RKE v1.6.1 | Rancher 2.9 | Kubernetes v1.29.7
 
 ```
-ssh -i rancher-multinode/rancher-key.pem rancher@34.45.189.254
+ssh -i rancher-multinode/rancher-key.pem rancher@34.68.131.157
 ```
 
 
 ```
-pastikan ssh ke semua server
 sudo su
 cat /home/serverdevops/cluster.yml
 su serverdevops
 cat /home/serverdevops/.ssh/id_rsa.pub
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCr9aVw7RfNmRfcnE99B+lhKqtsKJTPtshlen/gPh9Ph6Zdk5BKCgDz3A6X1eSlFiyFPwuu5pCiaBjddsqZbngAQ2LGWkYhAEkVdV5MD+YMWz9XMVkauEmAayTLC3PsPDbiL54QUF6/+ejEhXUHU6b5KxahC7K3QXf5Nb/FHPHCkj9rYDadbdfCj/wIzg4QDgfWKsrFyblW1J7bRniw/oXdTPqlKRGsn7rZ9d4mYNnTe2he11aKZwndPUGmEcWmPL8h+hmzwMhuZj+6ELZf9vGNIaee+5QdpgOI2DBnkKGOyopDWZZjSYKxjkoN3G2id2q9aLx6/Nv+fvS+IpK33g3h ansible-generated on rancher-node-1" >> ~/.ssh/authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFaATFGYWAn8tfTRUOFonNHG7v+h36xU7gz0/0uiXxaiIT7LTiE2i81VdjujZKhS3yqReHnyHK7hOG9TPmQC68cxDLcflddzowpgGE9WZT+maUG+SG81N5csMuilAxy+WVtRN7p9D1uBS8YCJ1V3rUeOX+26GZvN7SkfNzwDvuogRcLxCnjJYw0mHeg3cMo7b+CViog49B5Io0nGGPIlQJXW4TSHBUn9OfTdDUCStkfUoeidkrynUVENJtNwkzhrH1Z33yFTIdMGlCdAmHGEpeeqewvherE+EAhT0NMUNgJZi8FzzTgyHqi8YcV7AikJ06fJ/ghRlgFU6pXN87Ep7/ ansible-generated on rancher-node-1" >> ~/.ssh/authorized_keys
 ssh serverdevops@10.0.0.3 # tes ssh
 ```
 
