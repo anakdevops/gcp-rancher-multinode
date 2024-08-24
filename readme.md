@@ -6,6 +6,10 @@ Network Management Admin
 ![image](serviceaccount.png)
 
 
+```
+pastikan sudah mendownload credential .json
+```
+
 
 ```
 ./init_terraform.sh
